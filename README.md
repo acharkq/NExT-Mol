@@ -228,7 +228,7 @@ python train_lm_conf.py --dataset "QM9-df" --root "./data/GEOM-QM9" --batch_size
 
 Note: Below, we present the code for training withe one GPU server and 8 A100s. For training with more than one GPU server, you will need to manually configure the distributed training to adapt to your devices. We use deepspeed stage 2 for distributed training, but do not provide the full distributed training guide here for anonymous purposes. Training with one GPU server is slower, but should reproduce the same results.
 
-Dataset: Find the preprocessed dataset named "GEOM-DRUGS.zip" under the **OneDrive/datasets** folder in the link [OSF](https://osf.io/gqy39/?view_only=5905ef8957f9444a8808fd49933b35c7)
+Dataset: Find the preprocessed dataset named "GEOM-DRUGS.zip" under the link [Google Drive](https://drive.google.com/file/d/1D_etl4rCDRbgNaRdYpsd68Jq9HTAo1Wd/view?usp=sharing)
 
 
 **Stage 1: DMT training (DMT-L)**
