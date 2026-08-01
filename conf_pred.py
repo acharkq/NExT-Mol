@@ -29,7 +29,7 @@ def main(args):
     # model
     current_epoch = 0
     if args.init_checkpoint:
-        model = UniMolConfTrain.load_from_checkpoint(args.init_checkpoint, device=args.devices, strict=True, args=args, tokenizer=tokenizer, max_sf_tokens=dm.max_sf_tokens)
+        model = UniMolConfTrain.load_from_checkpoint(args.init_checkpoint, device=args.devices, strict=False, args=args, tokenizer=tokenizer, max_sf_tokens=dm.max_sf_tokens)
         print(f"loading model from {args.init_checkpoint}")
         ckpt = torch.load(args.init_checkpoint, map_location='cpu')
         current_epoch = ckpt['epoch']
